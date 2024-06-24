@@ -47,13 +47,26 @@ Estas son las definiciones de los puntos de datos proporcionados:
 7. **Optimización del modelo**: Optimización del modelo XGBoost utilizando GridSearchCV y evaluación del mejor modelo.
 8. **Análisis de importancia de características**: Determinación de los principales factores que influyen en el precio.
 9. **Interpretación de resultados**: Breve exposición y análisis de los resultados del punto 8.
+9. **Análisis de viviendas con precio superior a $650,000**: Exploración específica de las características de las viviendas de alto valor.
+10. **Conclusiones**: Resumen de hallazgos y recomendaciones futuras.
 
-## Conclusión
+## Conclusión general
 El modelo XGBoost Regressor afinado surgió como el modelo de mejor rendimiento tras aplicar diversas técnicas de preprocesamiento de datos como la estandarización y la transformación logarítmica.
 
 Características como `grade`, `lat`, y `sqft_living` se encontraron significativamente influyentes en el precio, donde `grade` refleja la calidad de la casa, `lat` representa la ubicación y `sqft_living` indica el tamaño de la vivienda. También destacan un código postal determinado y tener vistas al mar/lago.
 
 Se recomienda considerar factores sociales adicionales como transporte, educación y tasas de criminalidad para una predicción de precios más completa.
+
+## Conclusión sobre las propiedades de más alto valor
+Las características identificadas como las más importantes por el modelo XGBoost son razonables y reflejan factores que típicamente influyen en el precio de propiedades de alto valor:
+
+- **Ubicación (zipcode_98039)**: Refleja la alta demanda y los servicios exclusivos de ciertas áreas.
+- **Vista al agua (waterfront)**: Aumenta significativamente el valor debido a su atractivo estético.
+- **Superficie habitable (sqft_living)**: Mayor superficie suele indicar mayor comodidad y lujo.
+- **Calidad de construcción (grade)**: La calidad de los materiales y los acabados es crucial en propiedades de lujo.
+- **Posición geográfica (long)**: Puede indicar la proximidad a puntos de interés específicos que afectan el valor de la propiedad.
+
+---
 
 Para una información más exhaustiva sobre insights y la metodología empleada, consultar el archivo ipynb.
 
